@@ -4,7 +4,7 @@
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 SERVICE_NAME=DAWN_Market_Place_Server
 SERVER_LOG=dawnmarket.log
-PATH_TO_JAR=$DIR/org.dawnsci.marketplace.server-1.0.0-SNAPSHOT.war
+PATH_TO_JAR=$DIR/org.dawnsci.marketplace.server-1.0.0-RELEASE.war
 PID_PATH_NAME=$DIR/dawn-marketplace-server-pid
 case $1 in
     start)
