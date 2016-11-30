@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <marketplace>
-	
+<marketplace>
 	<featured>
 		<node xmlns:org.dawnsci="http://org.dawnsci/marketplace" id="1"
 			name="Sample Solution" url="">
@@ -39,6 +38,5 @@
 			</ius>
 		</node>
 	</featured>
-	
 </marketplace>
--->
+
