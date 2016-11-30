@@ -136,6 +136,8 @@ public class HibernateService {
 	public void loadSolutions() {
 		// load solutions from file
 		EList<EObject> solutions = loadSerialized("data/solutions.xml");
+		if (solutions == null || solutions.isEmpty())
+			return;
 		EList<Node> nodes = ((Marketplace) solutions.get(0)).getFeatured().getNodes();
 		for (Node node : nodes) {
 			Node copy = EcoreUtil.copy(node);
