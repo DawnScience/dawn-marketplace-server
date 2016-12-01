@@ -80,7 +80,7 @@ public class ImagesSection extends SectionPart {
 
 		// screenshot file
 
-		Label lblScreenshotFile = toolkit.createLabel(container, "Screenshot (16:10):", SWT.NONE);
+		Label lblScreenshotFile = toolkit.createLabel(container, "Screenshot (16x10):", SWT.NONE);
 		lblScreenshotFile.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 
 		txtScreenshotFilePath = toolkit.createText(container, "", SWT.NONE);
@@ -97,7 +97,7 @@ public class ImagesSection extends SectionPart {
 			public void widgetSelected(SelectionEvent e) {
 				FileDialog fd = new FileDialog(getSection().getShell(), SWT.OPEN);
 				fd.setText("Please select an image file");
-				fd.setFilterExtensions(new String[] { "png", "jpg" });
+				fd.setFilterExtensions(new String[] { ".png", ".jpg" });
 				String open = fd.open();
 				if (!(open == null || open.isEmpty())) {
 					txtScreenshotFilePath.setText(open);
